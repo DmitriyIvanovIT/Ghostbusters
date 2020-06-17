@@ -346,6 +346,7 @@ input:focus {
     font-size: 16px;
     line-height: 19px;
     color: #5671F6;
+    margin-bottom: 6px;
 }
 
 .en-mame {
