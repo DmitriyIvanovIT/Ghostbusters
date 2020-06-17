@@ -279,3 +279,83 @@ input:focus {
 .rating-text:not(:last-child) {
     margin-bottom: 7px;
 }
+
+.cast {
+    padding-top: 70px;
+    padding-bottom: 65px;
+}
+
+.cast-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #A5A5A5;
+}
+
+.section-title:not(:last-child) {
+    margin-right: 30px;
+}
+
+.tabs-active {
+    color: #363636;
+    font-weight: 900;
+}
+
+.cadrs-actors {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6;
+}
+
+.en-mame {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5
+}
+
+.is-active {
+    display: flex;
+}
