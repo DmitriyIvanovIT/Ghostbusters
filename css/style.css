@@ -20,7 +20,7 @@ button {
 }
 
 button:focus,
-input:focus {
+input:focus, a:focus {
     outline: none;
 }
 
@@ -88,6 +88,10 @@ input:focus {
     color: #363636;
 }
 
+.navigation-link:hover {
+    color: #D4D4D4;
+}
+
 .navigation-link:not(:last-child) {
     margin-right: 18px;
 }
@@ -102,6 +106,10 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header-button:hover {
+    color: #D4D4D4;
 }
 
 .sign-up {
@@ -152,6 +160,8 @@ input:focus {
 
 
 .trailer-button {
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -168,6 +178,11 @@ input:focus {
     line-height: 19px;
     color: #5671F6;
 }
+
+.trailer-button:hover {
+    background: rgb(36,36,36,0.3);
+}
+
 
 .film-info {
     display: flex;
@@ -315,7 +330,7 @@ input:focus {
     font-weight: 900;
 }
 
-.cadrs-actors {
+.cadrs-actors, .cadrs-creators {
     display: none;
     align-items: center;
     flex-wrap: wrap;
@@ -351,6 +366,15 @@ input:focus {
 }
 
 .en-mame {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5
+}
+
+.post {
+    margin-top: 6px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
