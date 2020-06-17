@@ -8,7 +8,8 @@
 h1,
 span,
 p,
-h3 {
+h3,
+h2 {
     margin: 0;
 }
 
@@ -141,7 +142,7 @@ input:focus {
 .film-trailer {
     display: flex;
     flex-direction: column;
-    max-width: 358px;
+    width: 358px;
     margin-right: 60px;
 }
 
@@ -359,4 +360,53 @@ input:focus {
 
 .is-active {
     display: flex;
+}
+
+.footer {
+    background: #F3F3F3;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.footer-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 65px;
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-card {
+    width: 260px;
+    height: 160px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 0 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+.news-text {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 }
