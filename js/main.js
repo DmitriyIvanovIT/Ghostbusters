@@ -1,7 +1,11 @@
 const actors = document.querySelector('#actors'),
 creators = document.querySelector('#creators'),
 cadrsActors = document.querySelector('.cadrs-actors'),
-cadrsCreators = document.querySelector('.cadrs-creators');
+cadrsCreators = document.querySelector('.cadrs-creators'),
+mobailButton = document.querySelector('.mobail-button'),
+menuButton = document.querySelector('.menu-button'),
+modal = document.querySelector('.modal'),
+header = document.querySelector('.header');
 
 const openCreators = () => {
     actors.classList.remove('tabs-active');
@@ -14,6 +18,11 @@ openActors = () => {
     actors.classList.add('tabs-active');
     cadrsCreators.classList.remove('is-active');
     cadrsActors.classList.add('is-active');
+}, 
+toggleModal = () => {
+    modal.classList.toggle('modal-active');
+    menuButton.classList.toggle('menu-button-active');
+    header.classList.toggle('header-active');
 };
 
 document.addEventListener('click', event => {
@@ -23,7 +32,8 @@ document.addEventListener('click', event => {
     } else if (event.target.closest('#creators')) {
         openCreators();
     }
-})
+});
 
-// creators.addEventListener('click', openCreators);
-// autors.addEventListener('click', openActors);
+menuButton.addEventListener('click', toggleModal);
+
+
